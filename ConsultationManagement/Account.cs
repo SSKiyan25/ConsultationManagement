@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace ConsultationManagement
 {
-    public class Account
+    public abstract class Account
     {
-        protected string emailAddress { get; private set; }
-        protected string password { get; private set; }
-        protected bool isAdmin { get; private set; }
-        protected DateTime dateCreated { get; private set; }
-        protected bool isArchived { get; private set; }
+        protected string EmailAddress { get; private set; }
+        protected string Password { get; private set; }
+        protected bool IsAdmin { get; private set; }
+        protected DateTime DateCreated { get; private set; }
+        protected bool IsArchived { get; private set; }
 
         public Account(string emailAddress, string password, bool isAdmin)
         {
-            this.emailAddress = emailAddress;
-            this.password = password;
-            this.isAdmin = isAdmin;
-            this.dateCreated = DateTime.Now;
+            this.EmailAddress = emailAddress;
+            this.Password = password;
+            this.IsAdmin = isAdmin;
+            this.DateCreated = DateTime.Now;
         }
 
         public bool Authenticate(string email, string pw)
         {
-            return (this.emailAddress == email && this.password == pw && !isArchived);
+            return (this.EmailAddress == email && this.Password == pw && !IsArchived);
         }
 
         public void DeleteAccount()
         {
-            this.isArchived = true;
+            this.IsArchived = true;
         }
     }
 }
