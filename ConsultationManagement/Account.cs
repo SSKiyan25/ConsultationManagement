@@ -8,11 +8,11 @@ namespace ConsultationManagement
 {
     public class Account
     {
-        private string emailAddress { get; set; }
-        private string password { get; set; }
-        private bool isAdmin { get; set; }
-        private DateTime dateCreated { get; set; }
-        private bool isArchived { get; set; }
+        protected string emailAddress { get; private set; }
+        protected string password { get; private set; }
+        protected bool isAdmin { get; private set; }
+        protected DateTime dateCreated { get; private set; }
+        protected bool isArchived { get; private set; }
 
         public Account(string emailAddress, string password, bool isAdmin)
         {
