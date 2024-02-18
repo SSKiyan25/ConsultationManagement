@@ -8,8 +8,8 @@ namespace ConsultationManagement
 {
     public class WorkSchedule
     {
-        public int WorkSchedID { get; set; }
-        public string Title { get; set; }
+        public int WorkSchedID { get; private set; }
+        public string Title { get; private set; }
         public DateTime Schedule;
         public Frequency Frequency { get; set; }
 
