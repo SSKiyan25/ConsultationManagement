@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsultationManagement
 {
-    internal class Client : Person
+    public class Client : Person
     {
-        public int clientID { get; set; }
+        private static int clientIDctr = 0;
+        public int clientID { get; private set; }
         public bool isStudent { get; set; }
-        public int studentID { get; set; }
-        public string emailAddress { get; set; }
+        public int studentID { get; private set; }
+        public string emailAddress { get; private set; }
         public List<Request> requests { get; set; }
 
         public Client(string name, string contactNumber) : base(name, contactNumber) 
         {
+            this.clientID = System.Threading.Interlocked.Increment(ref clientIDctr);
             this.requests = new List<Request>();
         }
 

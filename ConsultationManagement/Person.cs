@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsultationManagement
 {
-    internal class Person
+    public abstract class Person
     {
         public string name { get; set; }
         public string contactNum { get; set; }
