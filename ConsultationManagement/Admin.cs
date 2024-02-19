@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 
 namespace ConsultationManagement
 {
-    public class Admin : Account
+    public class Admin
     {
         private static int adminIdCounter = 0;
-        public int AdminId { get; private set; }
+        public int AdminId { get; set; }
         private HashSet<Personnel> personnels;
-        public Account Account { get; private set; }
-        public Admin(string email, string password) : base(email, password, true)
+        public Account Account { get; set; };
+        public Admin(string email, string password)
         {
             this.AdminId = System.Threading.Interlocked.Increment(ref adminIdCounter);
             this.personnels = new HashSet<Personnel>();
+            this.Account = new Account(email, password, true);
         }
         public void AddPersonnel(Personnel personnel)
         {
