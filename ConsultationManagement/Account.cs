@@ -6,30 +6,62 @@ using System.Threading.Tasks;
 
 namespace ConsultationManagement
 {
-    public abstract class Account
+    public class Account
     {
-        protected string EmailAddress { get; private set; }
-        protected string Password { get; private set; }
-        protected bool IsAdmin { get; private set; }
-        protected DateTime DateCreated { get; private set; }
-        protected bool IsArchived { get; private set; }
+        private string emailAddress;
+        private string password;
+        private bool isAdmin;
+        private DateTime dateCreated;
+        private bool isArchived;
 
         public Account(string emailAddress, string password, bool isAdmin)
         {
-            this.EmailAddress = emailAddress;
-            this.Password = password;
-            this.IsAdmin = isAdmin;
-            this.DateCreated = DateTime.Now;
+            this.emailAddress = emailAddress;
+            this.password = password;
+            this.isAdmin = isAdmin;
+            this.dateCreated = DateTime.Now;
         }
 
         public bool Authenticate(string email, string pw)
         {
-            return (this.EmailAddress == email && this.Password == pw && !IsArchived);
+            return (this.emailAddress == email && this.password == pw && !isArchived);
         }
 
+        public void SetEmailAddress(string emailAdd)
+        {
+            this.emailAddress = emailAdd;
+        }
+        public string GetEmailAddress()
+        {
+            return this.emailAddress;
+        }
+        public void SetPassword(string pw)
+        {
+            this.password = pw;
+        }
+        public string GetPassword()
+        {
+            return this.password;
+        }
+        public void SetAdminStatus(bool status)
+        {
+            this.isAdmin = status;
+        }
+        public bool GetAdminStatus()
+        {
+            return this.isAdmin;
+        }
+        public DateTime GetDateCreated()
+        {
+            return this.dateCreated;
+        }
+        public void RestoreAccount()
+        {
+            this.isArchived = false;
+        }
         public void DeleteAccount()
         {
-            this.IsArchived = true;
+            this.isArchived = true;
         }
     }
 }
