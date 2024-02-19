@@ -17,7 +17,7 @@ namespace ConsultationManagement
         public RequestStatus status { get; set; }
 
 
-        public Request(Personnel personnel, string purpose, DateTime date)
+        public Request(Personnel personnel, string purpose, DateTime     date)
         {
             this.requestID = System.Threading.Interlocked.Increment(ref requestIDctr);
             this.personnel = personnel;
