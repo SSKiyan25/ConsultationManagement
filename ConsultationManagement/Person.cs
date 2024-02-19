@@ -8,13 +8,13 @@ namespace ConsultationManagement
 {
     public abstract class Person
     {
-        public string name { get; set; }
-        public string contactNum { get; set; }
+        public string Name { get; set; }
+        public string ContactNum { get; set; }
 
         public Person(string name, string contactNum)
         {
-            this.name = name;
-            this.contactNum = contactNum;
+            this.Name = name;
+            this.ContactNum = contactNum;
         }
     }
 }

@@ -9,17 +9,17 @@ namespace ConsultationManagement
     public class Personnel : Person
     {
         private static int personnelIDctr = 0;
-        public int personnelID { get; set; }
-        public List<Client> clients { get; set; }
-        public Classification classification { get; set; }
-        public PersonnelStatus status { get; set; }
-        public Account account { get; set; }
-        public WorkSchedule workSchedule { get; set; }
+        public int PersonnelID { get; set; }
+        public List<Client> Clients { get; set; }
+        public Classification Classification { get; set; }
+        public PersonnelStatus Status { get; set; }
+        public Account Account { get; set; }
+        public WorkSchedule WorkSchedule { get; set; }
         
         public Personnel(string Name, string ContactNumber) : base(Name,ContactNumber) 
         {
-            this.personnelID = System.Threading.Interlocked.Increment(ref personnelIDctr);
-            this.clients = new List<Client>();
+            this.PersonnelID = System.Threading.Interlocked.Increment(ref personnelIDctr);
+            this.Clients = new List<Client>();
         }
 
         public void setAppointmentRequest(Client client)
@@ -29,7 +29,7 @@ namespace ConsultationManagement
 
         public void setPersonnelStatus(PersonnelStatus status) 
         {
-            this.status = status;
+            this.Status = status;
         }
 
         public void addWorkSchedule(WorkSchedule sched)
