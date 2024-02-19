@@ -12,7 +12,7 @@ namespace ConsultationManagement
         private static int adminIdCounter = 0;
         public int AdminId { get; set; }
         private HashSet<Personnel> personnels;
-        public Account Account { get; set; };
+        public Account Account { get; set; }
         public Admin(string email, string password)
         {
             this.AdminId = System.Threading.Interlocked.Increment(ref adminIdCounter);
