@@ -15,8 +15,6 @@ namespace ConsultationManagement
         protected bool isArchived { get; set; }
         public Personnel personnel { get; private set; }
         public RequestStatus status { get; set; }
-
-
         public Request(Personnel personnel, string purpose, DateTime     date)
         {
             this.requestID = System.Threading.Interlocked.Increment(ref requestIDctr);

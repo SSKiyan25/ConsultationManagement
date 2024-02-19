@@ -13,8 +13,8 @@ namespace ConsultationManagement
         public List<Client> clients { get; set; }
         public Classification classification { get; set; }
         public PersonnelStatus status { get; set; }
-        //public Account account { get; set; }
-        //public WorkSchedule workSchedule { get; set; }
+        public Account account { get; set; }
+        public WorkSchedule workSchedule { get; set; }
         
         public Personnel(string Name, string ContactNumber) : base(Name,ContactNumber) 
         {
