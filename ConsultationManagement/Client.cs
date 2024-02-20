@@ -21,19 +21,19 @@ namespace ConsultationManagement
             this.Requests = new List<Request>();
         }
 
-        public void setEmailAddress(string emailAddress)
+        public void SetEmailAddress(string emailAddress)
         {
             this.EmailAddress = emailAddress;
         }
 
-        public void setStudentID(int StudentID)
+        public void SetStudentID(int StudentID)
         {
             this.StudentID = StudentID;
         }
 
-        public void addRequestAppointment(Personnel personnel, string purpose, DateTime date)
+        public void AddRequestAppointment(Personnel personnel, string purpose, DateTime date)
         {
-            if(personnel.setPersonnelStatus(PersonnelStatus.DnD) || personnel.setPersonnelStatus(PersonnelStatus.OnLeave))
+            if(personnel.Status == PersonnelStatus.DnD || personnel.Status == PersonnelStatus.OnLeave)
             {
                 return;
             }
