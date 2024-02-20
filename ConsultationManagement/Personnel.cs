@@ -14,7 +14,7 @@ namespace ConsultationManagement
         public Classification Classification { get; set; }
         public PersonnelStatus Status { get; set; }
         public Account Account { get; set; }
-        public WorkSchedule WorkSchedule { get; set; }
+        public List<WorkSchedule> WorkSchedule { get; set; }
         
         public Personnel(string Name, string ContactNumber) : base(Name,ContactNumber) 
         {
@@ -22,9 +22,19 @@ namespace ConsultationManagement
             this.Clients = new List<Client>();
         }
 
-        public void setAppointmentRequest(Client client)
+        public void setAppointmentRequest(Client client, RequestStatus status)
         {
-                        
+            if (!Clients.Contains(client)) { return; }
+
+            foreach(Request r in client.Requests)
+            {
+                if(r.Personnel.Equals(this))
+                {
+                    r.Status = status;
+                    if(Clients.Remove(client))
+                    break;
+                }
+            }
         }
 
         public void setPersonnelStatus(PersonnelStatus status) 
@@ -34,12 +44,12 @@ namespace ConsultationManagement
 
         public void addWorkSchedule(WorkSchedule sched)
         {
-
+            this.WorkSchedule.Add(sched);
         }
 
         public void removeWorkSchedule(WorkSchedule sched)
         {
-
+            this.WorkSchedule.Remove(sched);
         }
     }
 }

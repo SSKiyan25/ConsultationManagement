@@ -33,8 +33,20 @@ namespace ConsultationManagement
 
         public void addRequestAppointment(Personnel personnel, string purpose, DateTime date)
         {
+            if(personnel.setPersonnelStatus(PersonnelStatus.DnD) || personnel.setPersonnelStatus(PersonnelStatus.OnLeave))
+            {
+                return;
+            }
+
+            foreach(WorkSchedule r in personnel.WorkSchedule)
+            {
+                if(date.Equals(r.Schedule))
+                {
+                    return;
+                }
+            }
             this.Requests.Add(new Request(personnel, purpose, date));
-            personnel.clients.Add(this);
+            personnel.Clients.Add(this);
         }
     }
 }
