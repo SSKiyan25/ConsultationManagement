@@ -34,7 +34,7 @@ namespace ConsultationManagement
         public void addRequestAppointment(Personnel personnel, string purpose, DateTime date)
         {
             this.Requests.Add(new Request(personnel, purpose, date));
-            personnel.clients.Add(this);
+            personnel.Clients.Add(this);
         }
     }
 }
