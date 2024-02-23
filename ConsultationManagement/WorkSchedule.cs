@@ -11,14 +11,16 @@ namespace ConsultationManagement
         private static int workSchedIdCounter = 0;
         public int WorkSchedID { get; private set; }
         public string Title { get; private set; }
-        public DateTime Schedule;
+        public DateTime StartTime;
+        public DateTime EndTime;
         public Frequency Frequency { get; private set; }
 
-        public WorkSchedule(int workSchedID, string title, DateTime schedule, Frequency frequency)
+        public WorkSchedule(int workSchedID, string title, DateTime start, DateTime end, Frequency frequency)
         {
             this.WorkSchedID = System.Threading.Interlocked.Increment(ref workSchedIdCounter);
             this.Title = title;
-            this.Schedule = schedule;
+            this.StartTime = start;
+            this.EndTime = end;
             this.Frequency = frequency;
         }
     }
