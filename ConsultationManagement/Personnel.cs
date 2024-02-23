@@ -4,7 +4,7 @@ namespace ConsultationManagement
 {
     public class Personnel : Person
     {
-        private static int personnelIDctr = 0;
+        public static int personnelIDctr = 0;
         public int PersonnelID { get; set; }
         public List<Client> Clients { get; set; }
         public Classification Classification { get; set; }

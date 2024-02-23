@@ -8,7 +8,7 @@ namespace ConsultationManagement
 {
     public class Client : Person
     {
-        private static int clientIDctr = 0;
+        public static int clientIDctr = 0;
         public int ClientID { get; private set; }
         public bool IsStudent { get; set; }
         public int StudentID { get; private set; }
@@ -31,7 +31,7 @@ namespace ConsultationManagement
             this.StudentID = StudentID;
         }
 
-        public void AddRequestAppointment(Personnel personnel, string purpose, DateTime date)
+        public void AddRequestAppointment(Personnel personnel, string purpose, DateTime start, DateTime end)
         {
             if(personnel.Status == PersonnelStatus.DnD || personnel.Status == PersonnelStatus.OnLeave)
             {
@@ -40,12 +40,13 @@ namespace ConsultationManagement
 
             foreach(WorkSchedule r in personnel.WorkSchedule)
             {
-                if(date.Equals(r.Schedule))
+                if()
                 {
                     return;
                 }
             }
-            this.Requests.Add(new Request(personnel, purpose, date));
+
+            this.Requests.Add(new Request(personnel, purpose));
             personnel.Clients.Add(this);
         }
     }
