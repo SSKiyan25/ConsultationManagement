@@ -21,15 +21,19 @@ namespace ConsultationManagement
 
         public void SetAppointmentRequest(Client client, RequestStatus status)
         {
-            if (!Clients.Contains(Clients)) { return false; }
+            if (!Clients.Contains(client)) { return false; }
 
             foreach (Request r in client.Requests)
             {
+                if (Request.IsArchived) { continue; }
                 if (r.Personnel.Equals(this))
                 {
                     r.Status = status;
-                    if (Clients.Remove(client))
-                        break;
+                    if(status == RequestStatus.Done || status == RequestStatus.Denied)
+                    {
+                        r.IsArchived = true;
+                    }
+                    break;
                 }
             }
         }

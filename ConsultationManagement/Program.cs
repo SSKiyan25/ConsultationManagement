@@ -10,7 +10,7 @@ namespace ConsultationManagement
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(DateTime.Now.DayOfYear);
+            Console.WriteLine(DateTime.Now.Hour);
         }
     }
 }

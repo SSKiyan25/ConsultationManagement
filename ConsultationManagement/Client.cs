@@ -46,8 +46,8 @@ namespace ConsultationManagement
                 }
             }
 
-            this.Requests.Add(new Request(personnel, purpose));
-            personnel.Clients.Add(this);
+            this.Requests.Add(new Request(personnel, purpose, start, end));
+            personnel.Clients.Add(this, this.ClientID);
             return true;
         }
     }

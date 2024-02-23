@@ -19,13 +19,13 @@ namespace ConsultationManagement
             this.personnels = new HashSet<Personnel>();
             this.Account = new Account(email, password, true);
         }
-        public void AddPersonnel(Personnel personnel)
+        public bool AddPersonnel(Personnel personnel)
         {
-            this.personnels.Add(personnel);
+            return this.personnels.Add(personnel);
         }
-        public void RemovePersonnel(Personnel personnel)
+        public bool RemovePersonnel(Personnel personnel)
         {
-            this.personnels.Remove(personnel);
+            return this.personnels.Remove(personnel);
         }
         public void ViewPersonnelRequest(Personnel personnel)
         {
@@ -35,9 +35,10 @@ namespace ConsultationManagement
             display all these requests
             */
         }
-        public void DeleteRequest(Request request)
+        public bool DeleteRequest(Request request)
         {
             request.IsArchived = true;
+            return request.IsArchived;
         }
     }
 }
