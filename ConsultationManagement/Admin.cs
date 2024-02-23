@@ -29,11 +29,15 @@ namespace ConsultationManagement
         }
         public void ViewPersonnelRequest(Personnel personnel)
         {
-
+            /*
+            access requestDB
+            iterate all requests with personnel properties
+            display all these requests
+            */
         }
         public void DeleteRequest(Request request)
         {
-
+            request.IsArchived = true;
         }
     }
 }
