@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Step1Appointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Step1Appointment.Designer.cs">
+      <DependentUpon>Step1Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Step2Appointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Step2Appointment.Designer.cs">
+      <DependentUpon>Step2Appointment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +78,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Step1Appointment.resx">
+      <DependentUpon>Step1Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Step2Appointment.resx">
+      <DependentUpon>Step2Appointment.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +98,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stepProcess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textboxDesign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stepProcess2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
