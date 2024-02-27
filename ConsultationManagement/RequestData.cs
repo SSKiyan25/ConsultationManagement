@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsultationManagementUI
+namespace ConsultationManagement
 {
-    internal class PersonnelData
+    public class RequestData
     {
-
     }
 }
