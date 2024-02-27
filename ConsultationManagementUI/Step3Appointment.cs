@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ConsultationManagementUI
 {
-    public partial class Form1 : Form
+    public partial class Step3Appointment : UserControl
     {
-        public Form1()
+        public Step3Appointment()
         {
             InitializeComponent();
-            Step2 step2 = new Step2();
-            Step1Appointment step1 = new Step1Appointment();
-            this.Controls.Add(step1);
-
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
