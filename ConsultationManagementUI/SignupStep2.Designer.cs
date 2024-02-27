@@ -345,6 +345,7 @@
             Name = "SignupStep2";
             Text = "SignupStep2";
             WindowState = FormWindowState.Maximized;
+            Load += SignupStep2_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel7.ResumeLayout(false);

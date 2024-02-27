@@ -21,6 +21,9 @@ namespace ConsultationManagementUI
             SetDoubleBuffered(tableLayoutPanel3);
             SetDoubleBuffered(tableLayoutPanel4);
             SetDoubleBuffered(tableLayoutPanel5);
+            SetDoubleBuffered(tableLayoutPanel6);
+            SetDoubleBuffered(tableLayoutPanel7);
+            SetDoubleBuffered(tableLayoutPanel8);
         }
 
         public static void SetDoubleBuffered(System.Windows.Forms.Control c)
@@ -190,6 +193,11 @@ namespace ConsultationManagementUI
             SignupStep3 s3 = new SignupStep3();
             DialogResult result = s3.ShowDialog();
             this.Hide();
+        }
+
+        private void SignupStep2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

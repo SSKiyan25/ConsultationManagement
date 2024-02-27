@@ -20,6 +20,9 @@ namespace ConsultationManagementUI
             SetDoubleBuffered(tableLayoutPanel1);
             SetDoubleBuffered(tableLayoutPanel2);
             SetDoubleBuffered(tableLayoutPanel3);
+            SetDoubleBuffered(tableLayoutPanel4);
+            SetDoubleBuffered(tableLayoutPanel5);
+            SetDoubleBuffered(tableLayoutPanel6);
 
         }
 
