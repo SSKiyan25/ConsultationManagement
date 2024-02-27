@@ -4,6 +4,7 @@ namespace ConsultationManagement
 {
     public class Request
     {
+        
         public static int requestIDctr = 0;
         public int RequestID { get; private set; }
         public string Purpose { get; set; }
