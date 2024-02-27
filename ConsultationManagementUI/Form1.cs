@@ -17,7 +17,8 @@ namespace ConsultationManagementUI
         public Form1()
         {
             InitializeComponent();
-            Step2 step1 = new Step2();
+            Step2 step2 = new Step2();
+            Step1Appointment step1 = new Step1Appointment();
             this.Controls.Add(step1);
         }
 
