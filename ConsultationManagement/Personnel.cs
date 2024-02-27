@@ -1,7 +1,7 @@
 
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
+
 
 namespace ConsultationManagement
 {
@@ -20,12 +20,14 @@ namespace ConsultationManagement
             this.PersonnelID = System.Threading.Interlocked.Increment(ref personnelIDctr);
             this.Clients = new Dictionary<Client, int>();
         }
-
-        public bool SetAppointmentRequest(Client client, RequestStatus status)
+        public void SetAppointmentRequest(Client client, RequestStatus status)
         {
+            if (!Clients.Contains(client)) { return false; }
+
             foreach (Request r in client.Requests)
             {
-                if (r.IsArchived) { continue; }
+                if (Request.IsArchived) { continue; }
+
                 if (r.Personnel.Equals(this))
                 {
                     r.Status = status;
@@ -33,10 +35,9 @@ namespace ConsultationManagement
                     {
                         r.IsArchived = true;
                     }
-                    return true;
+                    break;
                 }
             }
-            return false;
         }
 
         public void SetPersonnelStatus(PersonnelStatus status)
