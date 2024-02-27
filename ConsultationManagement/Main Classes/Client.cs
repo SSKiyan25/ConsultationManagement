@@ -25,6 +25,8 @@ namespace ConsultationManagement
 
         public void SetStudentID(int StudentID)
         {
+            //student id must be checked if it adheres to VSU ID format
+
             this.StudentID = StudentID;
         }
 

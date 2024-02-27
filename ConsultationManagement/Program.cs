@@ -1,4 +1,5 @@
 ﻿using System;
+using Google.Cloud.Firestore;
 
 namespace ConsultationManagement
 {
