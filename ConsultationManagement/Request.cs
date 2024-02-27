@@ -24,7 +24,6 @@ namespace ConsultationManagement
             this.RequestedTimeEnd = end;
             this.IsArchived = false;
             this.Status = RequestStatus.Pending;
-            this.DateRequested = DateTime.Now;
         }
     }
 }
