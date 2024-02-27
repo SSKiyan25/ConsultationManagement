@@ -11,6 +11,6 @@ namespace ConsultationManagement
     public class UserData
     {
         [FirestoreProperty]
-        public string Username {  get; set; }
+        public string Username { get; set; }
     }
 }
