@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsultationManagement
 {
@@ -19,13 +20,11 @@ namespace ConsultationManagement
             this.Clients = new Dictionary<Client, int>();
         }
 
-        public void SetAppointmentRequest(Client client, RequestStatus status)
+        public bool SetAppointmentRequest(Client client, RequestStatus status)
         {
-            if (!Clients.Contains(client)) { return false; }
-
             foreach (Request r in client.Requests)
             {
-                if (Request.IsArchived) { continue; }
+                if (r.IsArchived) { continue; }
                 if (r.Personnel.Equals(this))
                 {
                     r.Status = status;
@@ -33,9 +32,10 @@ namespace ConsultationManagement
                     {
                         r.IsArchived = true;
                     }
-                    break;
+                    return true;
                 }
             }
+            return false;
         }
 
         public void SetPersonnelStatus(PersonnelStatus status)
