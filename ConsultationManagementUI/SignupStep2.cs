@@ -28,13 +28,25 @@ namespace ConsultationManagementUI
 
         public static void SetDoubleBuffered(System.Windows.Forms.Control c)
         {
+            // Check if the application is running in a Terminal Server session
             if (System.Windows.Forms.SystemInformation.TerminalServerSession)
                 return;
-            System.Reflection.PropertyInfo aProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered",
-            System.Reflection.BindingFlags.NonPublic |
-            System.Reflection.BindingFlags.Instance);
-            aProp.SetValue(c, true, null);
+
+            // Use reflection to access the non-public "DoubleBuffered" property of the control
+            System.Reflection.PropertyInfo? aProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered",
+                System.Reflection.BindingFlags.NonPublic |
+                System.Reflection.BindingFlags.Instance);
+
+            // Check if the property was found before dereferencing
+            if (aProp != null)
+            {
+                // Set the "DoubleBuffered" property to true
+                aProp.SetValue(c, true, null);
+            }
         }
+
+
+
 
         protected override CreateParams CreateParams
         {

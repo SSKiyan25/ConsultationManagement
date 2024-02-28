@@ -63,129 +63,9 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _2_ellipse_background__1_ {
-            get {
-                object obj = ResourceManager.GetObject("2 ellipse background (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Forgot_Password_ {
-            get {
-                object obj = ResourceManager.GetObject("Forgot Password_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Group_1__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Group 1 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Group_1__2_ {
-            get {
-                object obj = ResourceManager.GetObject("Group 1 (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Group_2 {
-            get {
-                object obj = ResourceManager.GetObject("Group 2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Group_2__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Group 2 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Group_2__2_ {
-            get {
-                object obj = ResourceManager.GetObject("Group 2 (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Group_2__3_ {
-            get {
-                object obj = ResourceManager.GetObject("Group 2 (3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Group_3 {
-            get {
-                object obj = ResourceManager.GetObject("Group 3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Log_In {
-            get {
-                object obj = ResourceManager.GetObject("Log In", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Log_In__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Log In (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Log_In__2_ {
             get {
                 object obj = ResourceManager.GetObject("Log In (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Log_In_form {
-            get {
-                object obj = ResourceManager.GetObject("Log In form", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,79 +83,9 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LogIn_button__1_ {
-            get {
-                object obj = ResourceManager.GetObject("LogIn button (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap LogIn_button__2_ {
-            get {
-                object obj = ResourceManager.GetObject("LogIn button (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Office_Workers_Sitting_At_Desks_removebg_preview_1 {
-            get {
-                object obj = ResourceManager.GetObject("Office_Workers_Sitting_At_Desks-removebg-preview 1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Office_Workers_Sitting_At_Desks_removebg_preview_1__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Office_Workers_Sitting_At_Desks-removebg-preview 1 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap SIGN_UP {
             get {
                 object obj = ResourceManager.GetObject("SIGN UP", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Sign Up (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up__2_ {
-            get {
-                object obj = ResourceManager.GetObject("Sign Up (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up__3_ {
-            get {
-                object obj = ResourceManager.GetObject("Sign Up (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,59 +103,9 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up_phase_3 {
-            get {
-                object obj = ResourceManager.GetObject("Sign Up phase 3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up_phase_3__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Sign Up phase 3 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up_phase_3__2_ {
-            get {
-                object obj = ResourceManager.GetObject("Sign Up phase 3 (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Sign_Up_phase_3__3_ {
             get {
                 object obj = ResourceManager.GetObject("Sign Up phase 3 (3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up_phase_4 {
-            get {
-                object obj = ResourceManager.GetObject("Sign Up phase 4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up_phase_4__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Sign Up phase 4 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
