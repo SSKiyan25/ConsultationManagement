@@ -22,6 +22,7 @@ namespace ConsultationManagementUI
             SetDoubleBuffered(tableLayoutPanel4);
             SetDoubleBuffered(tableLayoutPanel5);
             SetDoubleBuffered(tableLayoutPanel6);
+            
         }
 
         public static void SetDoubleBuffered(System.Windows.Forms.Control c)
