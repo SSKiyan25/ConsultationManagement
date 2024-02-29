@@ -93,6 +93,26 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap roundRectangle {
+            get {
+                object obj = ResourceManager.GetObject("roundRectangle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap step3Process {
+            get {
+                object obj = ResourceManager.GetObject("step3Process", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stepProcess {
             get {
                 object obj = ResourceManager.GetObject("stepProcess", resourceCulture);
@@ -116,6 +136,16 @@ namespace ConsultationManagementUI.Properties {
         internal static System.Drawing.Bitmap textboxDesign {
             get {
                 object obj = ResourceManager.GetObject("textboxDesign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Verified {
+            get {
+                object obj = ResourceManager.GetObject("Verified", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

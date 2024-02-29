@@ -36,9 +36,9 @@ namespace ConsultationManagementUI
 
         private void nextButton_MouseClick(object sender, MouseEventArgs e)
         {
-            Step1Appointment step1 = new Step1Appointment();
+            Step3Appointment step3 = new Step3Appointment();
             this.Controls.Clear();
-            this.Controls.Add(step1);
+            this.Controls.Add(step3);
         }
 
         private void prevButton_MouseEnter(object sender, EventArgs e)
