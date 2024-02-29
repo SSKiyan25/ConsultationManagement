@@ -15,6 +15,9 @@ namespace ConsultationManagementUI
         public Home()
         {
             InitializeComponent();
+            facultyAndStaffLabel.BackColor = Color.Transparent;
+            ConsultationAppointmentLabel.BackColor = Color.Transparent;
+            
         }
 
        
