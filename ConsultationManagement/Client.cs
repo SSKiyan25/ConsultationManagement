@@ -16,6 +16,7 @@ namespace ConsultationManagement
         {
             this.ClientID = System.Threading.Interlocked.Increment(ref clientIDctr);
             this.Requests = new List<Request>();
+            this.IsStudent = false;
         }
 
         public void SetEmailAddress(string emailAddress)
@@ -25,15 +26,17 @@ namespace ConsultationManagement
 
         public void SetStudentID(int StudentID)
         {
+            if(StudentID == null)
+            {
+                return;
+            }
             this.StudentID = StudentID;
+            this.IsStudent = true;
         }
 
         public bool AddRequestAppointment(Personnel personnel, string purpose, DateTime start, DateTime end)
         {
-            if (personnel.Status == PersonnelStatus.DnD || personnel.Status == PersonnelStatus.OnLeave)
-            {
-                return false;
-            }
+            if (personnel.Status == PersonnelStatus.DnD || personnel.Status == PersonnelStatus.OnLeave){ return false;}
 
             foreach (WorkSchedule r in personnel.WorkSchedule)
             {

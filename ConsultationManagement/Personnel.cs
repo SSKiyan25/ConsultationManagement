@@ -46,6 +46,12 @@ namespace ConsultationManagement
 
         public bool AddWorkSchedule(WorkSchedule sched)
         {
+            if (this.WorkSchedule.Count == 0) 
+            {
+                this.WorkSchedule.Add(sched);
+                return true;
+            }
+
             foreach (WorkSchedule r in this.WorkSchedule)
             {
                 if ((sched.EndTime > r.StartTime && sched.EndTime < r.EndTime) || (sched.StartTime > r.StartTime && sched.StartTime < r.EndTime))
