@@ -21,7 +21,7 @@ namespace ConsultationManagementUI
             Step3Appointment step3 = new Step3Appointment();
             this.Controls.Add(step1);
 
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
