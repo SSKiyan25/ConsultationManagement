@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace ConsultationManagementUI
 {
-    public partial class Step3Appointment : UserControl
+    public partial class Home : Form
     {
-        public Step3Appointment()
+        public Home()
         {
             InitializeComponent();
         }
 
-        private void HomeLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Controls.Clear();
-        }
+       
     }
 }

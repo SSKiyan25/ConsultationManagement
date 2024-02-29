@@ -46,5 +46,39 @@ namespace ConsultationManagementUI
             this.Controls.Clear();
             this.Controls.Add(step2);
         }
+
+        private void PurposeComboBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (PurposeComboBox.Text.Equals("Enter name or Department"))
+            {
+                PurposeComboBox.Text = "";
+                PurposeComboBox.ForeColor = Color.Black;
+            }
+            /*Step1Continuation step1Continuation = new Step1Continuation();
+            this.Controls.Clear();
+            this.Controls.Add(step1Continuation);*/
+        }
+
+        private void backButton_MouseEnter(object sender, EventArgs e)
+        {
+            backButton.BackColor = Color.FromArgb(141, 238, 155);
+        }
+
+        private void backButton_MouseLeave(object sender, EventArgs e)
+        {
+            backButton.BackColor = Color.FromArgb(217, 217, 217);
+        }
+
+        
+
+        private void PurposeComboBox_Leave(object sender, EventArgs e)
+        {
+            if (PurposeComboBox.Text.Equals(""))
+            {
+                PurposeComboBox.Text = "Enter name or Department";
+                PurposeComboBox.ForeColor = Color.Gray;
+;
+            }
+        }
     }
 }
