@@ -16,11 +16,12 @@ namespace ConsultationManagementUI
         [STAThread]
         static void Main()
         {
-            FirestoreHelper.SetEnvironmentVariable();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            
+            Application.Run(new Login());
         }
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool SetProcessDPIAware();
     }
 }

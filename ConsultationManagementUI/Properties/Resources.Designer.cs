@@ -83,6 +83,16 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Log_In__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Log In (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -96,6 +106,36 @@ namespace ConsultationManagementUI.Properties {
         internal static System.Drawing.Bitmap roundRectangle {
             get {
                 object obj = ResourceManager.GetObject("roundRectangle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sign_Up__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Sign Up (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sign_Up_phase_3__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Sign Up phase 3 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sign_Up_phase_4__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Sign Up phase 4 (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
