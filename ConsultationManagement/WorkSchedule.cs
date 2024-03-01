@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//WorkschedID parameter useless, to be updated.
+//dili bata mag need anig unsa nga day like monday, tuesday, etc.?
+
 namespace ConsultationManagement
 {
     public class WorkSchedule

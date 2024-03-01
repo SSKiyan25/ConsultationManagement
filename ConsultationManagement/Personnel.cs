@@ -14,10 +14,11 @@ namespace ConsultationManagement
         public Account Account { get; set; }
         public HashSet<WorkSchedule> WorkSchedule { get; set; }
 
-        public Personnel(string Name, string ContactNumber) : base(Name, ContactNumber)
+        public Personnel(string Name, string ContactNumber, PersonnelStatus status) : base(Name, ContactNumber)
         {
             this.PersonnelID = System.Threading.Interlocked.Increment(ref personnelIDctr);
             this.Clients = new Dictionary<Client, int>();
+            this.Status = status;
         }
 
         public void SetAppointmentRequest(Client client, RequestStatus status)
