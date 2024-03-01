@@ -17,11 +17,11 @@ namespace ConsultationManagementUI
         public Form1()
         {
             InitializeComponent();
-            Step2 step2 = new Step2();
-            Step1Appointment step1 = new Step1Appointment();
+            //Step2 step2 = new Step2();
+            //Step1Appointment step1 = new Step1Appointment();
             Step1Continuation step11 = new Step1Continuation();
-            Step3Appointment step3 = new Step3Appointment();
-            this.Controls.Add(step1);
+            //Step3Appointment step3 = new Step3Appointment();
+            //this.Controls.Add(step1);
         }
 
         private void button1_Click(object sender, EventArgs e)

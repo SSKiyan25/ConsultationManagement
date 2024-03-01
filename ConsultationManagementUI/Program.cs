@@ -19,7 +19,6 @@ namespace ConsultationManagementUI
             SetProcessDPIAware();
             Application.EnableVisualStyles();   
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SignUpStep1());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
