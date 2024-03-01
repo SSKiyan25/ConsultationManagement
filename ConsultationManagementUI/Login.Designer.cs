@@ -136,6 +136,7 @@ namespace ConsultationManagementUI
             this.label1.TabIndex = 2;
             this.label1.Text = "Forgot Password?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             this.label1.Enter += new System.EventHandler(this.label1_Enter);
             this.label1.Leave += new System.EventHandler(this.label1_Leave);
             this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter);

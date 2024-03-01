@@ -144,12 +144,17 @@ namespace ConsultationManagementUI
 
         private void label1_MouseEnter(object sender, EventArgs e)
         {
-            this.label1.Font = new System.Drawing.Font(label1.Font, label1.Font.Style | FontStyle.Underline);
+            this.label1.Font = new System.Drawing.Font(label1.Font, label1.Font.Style | System.Drawing.FontStyle.Underline);
         }
 
         private void label1_MouseLeave(object sender, EventArgs e)
         {
-            this.label1.Font = new System.Drawing.Font(label1.Font, label1.Font.Style | ~FontStyle.Underline);
+            this.label1.Font = new System.Drawing.Font(label1.Font, label1.Font.Style & ~System.Drawing.FontStyle.Underline);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
