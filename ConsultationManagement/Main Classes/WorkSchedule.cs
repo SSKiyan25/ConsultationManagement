@@ -11,7 +11,7 @@ namespace ConsultationManagement
         public DateTime EndTime;
         public Frequency Frequency { get; private set; }
 
-        public WorkSchedule(int workSchedID, string title, DateTime start, DateTime end, Frequency frequency)
+        public WorkSchedule(string title, DateTime start, DateTime end, Frequency frequency)
         {
             this.WorkSchedID = System.Threading.Interlocked.Increment(ref workSchedIdCounter);
             this.Title = title;
