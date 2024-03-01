@@ -93,6 +93,16 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LOGIN {
+            get {
+                object obj = ResourceManager.GetObject("LOGIN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -106,6 +116,16 @@ namespace ConsultationManagementUI.Properties {
         internal static System.Drawing.Bitmap roundRectangle {
             get {
                 object obj = ResourceManager.GetObject("roundRectangle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SIGN_UP {
+            get {
+                object obj = ResourceManager.GetObject("SIGN UP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
