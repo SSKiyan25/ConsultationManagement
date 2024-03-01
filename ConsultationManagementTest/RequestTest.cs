@@ -7,7 +7,7 @@ namespace ConsultationManagementTest
         [Fact]
         public void RequestTest_RequestCreation()
         {
-            var personnel = new Personnel("Jade", "09123456789");
+            var personnel = new Personnel("Jade", "09123456789", PersonnelStatus.Available );
             var request1 = new Request(personnel, "Ask for handsome registration form", new DateTime(2024, 02, 28), new DateTime(2024, 02, 29));
             var request2 = new Request(personnel, "Ask for handsome Grades", new DateTime(2024, 02, 28), new DateTime(2024, 02, 29));
             var request3 = new Request(personnel, "Ask for handsome registration form", new DateTime(2024, 02, 28), new DateTime(2024, 02, 29));

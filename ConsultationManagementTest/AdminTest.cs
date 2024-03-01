@@ -7,7 +7,7 @@ namespace ConsultationManagementTest
         [Fact]
         public void AdminTest_AddRemovePersonnel_ReturnTrue()
         {
-            var personnel = new Personnel("Jade", "09933103211");
+            var personnel = new Personnel("Jade", "09933103211", PersonnelStatus.Available);
             var admin = new Admin("pogi@gmail.com","pogi1234");
 
             var addResult = admin.AddPersonnel(personnel);
@@ -22,7 +22,7 @@ namespace ConsultationManagementTest
         [Fact]
         public void AdminTest_DeleteRequest_ReturnTrue()
         {
-            var personnel = new Personnel("Jade", "09933103211");
+            var personnel = new Personnel("Jade", "09933103211", PersonnelStatus.Available);
             var request = new Request(personnel, "Naay Klase?", new DateTime(2024, 01, 01), new DateTime(2024, 02, 27));
             var admin = new Admin("pogi@gmail.com","pogi1234");
 

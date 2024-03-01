@@ -7,10 +7,10 @@ namespace ConsultationManagementTest
         [Fact]
         public void WorkSchedTest_Creation()
         {
-            var workSched1 = new WorkSchedule(6, "Event Driven Programming", new DateTime(2024, 02, 26, 08, 00, 00), new DateTime(2024, 02, 26, 12, 00, 00), Frequency.Once);
-            var workSched2 = new WorkSchedule(5, "Fundamentals of Programming", new DateTime(2024, 02, 26, 13, 00, 00), new DateTime(2024, 02, 26, 16, 00,00), Frequency.Once);
-            var workSched3 = new WorkSchedule(5, "Fundamentals of Programming", new DateTime(2024, 02, 26, 13, 00, 00), new DateTime(2024, 02, 26, 16, 00, 00), Frequency.Once);
-            var workSched4 = new WorkSchedule(6, "Event Driven Programming", new DateTime(2024, 02, 26, 08, 00, 00), new DateTime(2024, 02, 26, 12, 00, 00), Frequency.Weekly);
+            var workSched1 = new WorkSchedule( "Event Driven Programming", new DateTime(2024, 02, 26, 08, 00, 00), new DateTime(2024, 02, 26, 12, 00, 00), Frequency.Once);
+            var workSched2 = new WorkSchedule( "Fundamentals of Programming", new DateTime(2024, 02, 26, 13, 00, 00), new DateTime(2024, 02, 26, 16, 00,00), Frequency.Once);
+            var workSched3 = new WorkSchedule( "Fundamentals of Programming", new DateTime(2024, 02, 26, 13, 00, 00), new DateTime(2024, 02, 26, 16, 00, 00), Frequency.Once);
+            var workSched4 = new WorkSchedule( "Event Driven Programming", new DateTime(2024, 02, 26, 08, 00, 00), new DateTime(2024, 02, 26, 12, 00, 00), Frequency.Weekly);
 
             var schedID1 = workSched1.WorkSchedID;
             var schedID2 = workSched2.WorkSchedID;

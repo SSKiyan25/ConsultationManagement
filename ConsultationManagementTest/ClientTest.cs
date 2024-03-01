@@ -6,9 +6,31 @@ namespace ConsultationManagementTest
     public class ClientTest
     {
 
-        public Personnel personnel = new Personnel("Jade", "09933103211");
-        public WorkSchedule sched = new WorkSchedule(07, "Algorithm and Complexity", new DateTime(2024, 02, 27, 8, 0, 0), new DateTime(2024, 02, 27, 10, 0, 0), Frequency.Once);
+        [Fact]
+        public void ClientTest_ClientId_ShouldBe_Unique()
+        {
+            var client1 = new Client("Jae", "09123456789");
+            var client2 = new Client("Jaes", "09123400789");
+            var client3 = new Client("Jaed", "09003456789");
+            var client4 = new Client("Jaer", "09123456009");
+            var client5 = new Client("Jaek", "09100456789");
+
+            var client1ID = client1.ClientID;
+            var client2ID = client2.ClientID;
+            var client3ID = client3.ClientID;
+            var client4ID = client4.ClientID;
+            var client5ID = client5.ClientID;
+
+            Assert.False(client1ID == client2ID);
+            Assert.False(client2ID == client3ID);
+            Assert.False(client3ID == client4ID);
+            Assert.False(client4ID == client5ID);
+
+        }
+
         
+
+
 
         [Fact]
         public void ClientTest_SetEmailAddress_ModifyTest()
@@ -16,7 +38,7 @@ namespace ConsultationManagementTest
             var client = new Client("Jade", "09933103211");
 
             client.SetEmailAddress("jadepogi@gmail.com");
-            var modifiedEmaiSl = client.EmailAddress;
+            var modifiedEmail = client.EmailAddress;
             var falseExpected = "false@gmail.com";
 
             Assert.True(modifiedEmail != null);
@@ -24,24 +46,85 @@ namespace ConsultationManagementTest
             Assert.DoesNotMatch(falseExpected, modifiedEmail );
            
         }
+
         [Fact]
-        public void ClientTest_SetStudentID_ModifyTest()
+        public void ClientTest_Initially_A_Non_StudentClient()
+        {
+            var client = new Client("Jae", "09123456789");
+            var isStudent = client.IsStudent;
+
+            Assert.False(isStudent);
+        }
+
+        [Fact]
+        public void ClientTest_ShouldbeAStudent_WhenStudentIDPresent()
+        {
+            var client = new Client("Jae", "09123456789");
+            client.SetStudentID("22-1-00159");
+            var isStudent = client.IsStudent;
+
+            Assert.True(isStudent);
+        }
+
+        [Fact]
+        public void ClientTest_StudentID_Should_Match()
         {
             var client = new Client("Jade", "09933103211");
 
-            client.SetStudentID(20242207);
+            client.SetStudentID("22-1-01059");
             var modifiedID = client.StudentID;
-            var falseExpected = 12345678;
+            var falseExpected = "22-1-00000";
 
 
-            Assert.Equal<int>(20242207, modifiedID);
+            Assert.Equal("22-1-01059", modifiedID);
             Assert.NotEqual(falseExpected, modifiedID );
 
-            falseExpected = 000000;
+            falseExpected ="22101059";
             Assert.NotEqual(falseExpected, modifiedID);
 
-            falseExpected = 202422071;
-            Assert.NotEqual(falseExpected, modifiedID);
+
+        }
+
+        [Fact]
+        public void ClientTest_ClientRequest_AccumulatesAndAccessible()
+        {
+            var count = 0;
+            var client = new Client("Jae", "09123498765");
+            var Sir = new Personnel("Sir Isaac", "09123456789",PersonnelStatus.Available);
+          
+            var request = new Request(Sir, "Pede ko Magpahimo Research?", new DateTime(2024, 03, 1, 8, 0, 0), new DateTime(2024, 03, 2, 16, 0, 0));
+            var request2 = new Request(Sir, "Request sad kog Loa", new DateTime(2024, 03, 1, 8, 0, 0), new DateTime(2024, 03, 2, 16, 0, 0));
+            var request3 = new Request(Sir, "Ay asta Form 137 sad diay", new DateTime(2024, 03, 1, 8, 0, 0), new DateTime(2024, 03, 2, 16, 0, 0));
+
+            client.Requests.Add(request);
+            client.Requests.Add(request2);
+            client.Requests.Add(request3);
+
+            foreach (Request r in client.Requests)
+            {
+                count++;
+                Assert.NotNull(r);
+            }
+            var purpose1 = client.Requests[0].Purpose;
+            var purpose2 = client.Requests[1].Purpose;
+            var purpose3 = client.Requests[2].Purpose;
+
+            var endreq1 = client.Requests[0].RequestedTimeEnd;
+            var endreq2 = client.Requests[1].RequestedTimeEnd;
+            var endreq3 = client.Requests[2].RequestedTimeEnd;
+
+            var targetpersonnel1 = client.Requests[0].Personnel; 
+            var targetpersonnel2 = client.Requests[1].Personnel; 
+            var targetpersonnel3 = client.Requests[2].Personnel; 
+            
+            Assert.NotEqual(purpose1, purpose2);
+            Assert.NotEqual(purpose1, purpose3);
+            Assert.Equal(endreq1, endreq2);
+            Assert.Equal(endreq2, endreq3);
+            Assert.Same(Sir, targetpersonnel1);
+            Assert.Same(Sir, targetpersonnel2);
+            Assert.Same(Sir, targetpersonnel3);
+            Assert.Equal(3, count);
 
         }
         
