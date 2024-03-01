@@ -1,7 +1,8 @@
 
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+
 
 namespace ConsultationManagement
 {
@@ -20,7 +21,6 @@ namespace ConsultationManagement
             this.PersonnelID = System.Threading.Interlocked.Increment(ref personnelIDctr);
             this.Clients = new Dictionary<Client, int>();
         }
-
         public bool SetAppointmentRequest(Client client, RequestStatus status)
         {
             foreach (Request r in client.Requests)
