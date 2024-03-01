@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.topPanel = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.PictureBox();
             this.VerificationLabel = new System.Windows.Forms.Label();
             this.SuccessfulLabel = new System.Windows.Forms.Label();
             this.HomeLinkLabel = new System.Windows.Forms.LinkLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.topPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // topPanel
@@ -54,17 +54,6 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1386, 69);
             this.topPanel.TabIndex = 2;
-            // 
-            // logo
-            // 
-            this.logo.Image = global::ConsultationManagementUI.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(46, -30);
-            this.logo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(238, 134);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo.TabIndex = 0;
-            this.logo.TabStop = false;
             // 
             // VerificationLabel
             // 
@@ -132,10 +121,20 @@
             this.pictureBox2.TabIndex = 41;
             this.pictureBox2.TabStop = false;
             // 
+            // logo
+            // 
+            this.logo.Image = global::ConsultationManagementUI.Properties.Resources.logo;
+            this.logo.Location = new System.Drawing.Point(46, -30);
+            this.logo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(238, 134);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo.TabIndex = 0;
+            this.logo.TabStop = false;
+            // 
             // Step3Appointment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(232)))), ((int)(((byte)(247)))));
             this.Controls.Add(this.HomeLinkLabel);
             this.Controls.Add(this.SuccessfulLabel);
@@ -148,10 +147,10 @@
             this.Name = "Step3Appointment";
             this.Size = new System.Drawing.Size(1386, 788);
             this.topPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
