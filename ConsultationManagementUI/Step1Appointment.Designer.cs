@@ -38,18 +38,18 @@
             this.nextButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.VerificationLabel = new System.Windows.Forms.Label();
+            this.topPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DateTimeBG = new System.Windows.Forms.PictureBox();
             this.studentIDtbDesign = new System.Windows.Forms.PictureBox();
             this.step1PictureBox = new System.Windows.Forms.PictureBox();
-            this.topPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
+            this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateTimeBG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentIDtbDesign)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.step1PictureBox)).BeginInit();
-            this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +66,6 @@
             this.PurposeComboBox.Size = new System.Drawing.Size(806, 26);
             this.PurposeComboBox.TabIndex = 35;
             this.PurposeComboBox.Text = "Enter name or Department";
-            
             this.PurposeComboBox.Leave += new System.EventHandler(this.PurposeComboBox_Leave);
             this.PurposeComboBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PurposeComboBox_MouseClick);
             // 
@@ -168,6 +167,7 @@
             this.backButton.TabIndex = 45;
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.backButton_MouseClick);
             this.backButton.MouseEnter += new System.EventHandler(this.backButton_MouseEnter);
             this.backButton.MouseLeave += new System.EventHandler(this.backButton_MouseLeave);
             // 
@@ -181,6 +181,18 @@
             this.VerificationLabel.Size = new System.Drawing.Size(159, 22);
             this.VerificationLabel.TabIndex = 47;
             this.VerificationLabel.Text = "Select Schedule";
+            // 
+            // topPanel
+            // 
+            this.topPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(15)))));
+            this.topPanel.Controls.Add(this.pictureBox2);
+            this.topPanel.Controls.Add(this.logo);
+            this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(1386, 69);
+            this.topPanel.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -224,18 +236,6 @@
             this.step1PictureBox.TabIndex = 31;
             this.step1PictureBox.TabStop = false;
             // 
-            // topPanel
-            // 
-            this.topPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(15)))));
-            this.topPanel.Controls.Add(this.pictureBox2);
-            this.topPanel.Controls.Add(this.logo);
-            this.topPanel.Location = new System.Drawing.Point(0, 0);
-            this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1386, 69);
-            this.topPanel.TabIndex = 1;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ConsultationManagementUI.Properties.Resources.logo;
@@ -257,8 +257,7 @@
             // 
             // Step1Appointment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(232)))), ((int)(((byte)(247)))));
             this.Controls.Add(this.VerificationLabel);
             this.Controls.Add(this.pictureBox1);
@@ -278,11 +277,11 @@
             this.Name = "Step1Appointment";
             this.Size = new System.Drawing.Size(1386, 788);
             this.Load += new System.EventHandler(this.Step1Appointment_Load);
+            this.topPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateTimeBG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentIDtbDesign)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.step1PictureBox)).EndInit();
-            this.topPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);

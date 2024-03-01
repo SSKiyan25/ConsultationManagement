@@ -12,14 +12,18 @@ namespace ConsultationManagementUI
 {
     public partial class Step3Appointment : UserControl
     {
-        public Step3Appointment()
+        public Home Home;
+        public Step3Appointment(Home home)
         {
             InitializeComponent();
+            this.Home = home;
         }
 
         private void HomeLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Controls.Clear();
+            Home.Controls.Clear();
+            HomeUI homeUI = new HomeUI(Home);
+            Home.Controls.Add(homeUI);
         }
     }
 }
