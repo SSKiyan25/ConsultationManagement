@@ -1,5 +1,8 @@
 ﻿using System;
 
+//WorkschedID parameter useless, to be updated.
+//dili bata mag need anig unsa nga day like monday, tuesday, etc.?
+
 namespace ConsultationManagement
 {
     public class WorkSchedule

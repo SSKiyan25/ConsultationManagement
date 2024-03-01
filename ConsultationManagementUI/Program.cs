@@ -16,7 +16,8 @@ namespace ConsultationManagementUI
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            SetProcessDPIAware();
+            Application.EnableVisualStyles();   
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Home());
         }
