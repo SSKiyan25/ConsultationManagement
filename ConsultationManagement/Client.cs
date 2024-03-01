@@ -26,7 +26,7 @@ namespace ConsultationManagement
 
         public void SetStudentID(int StudentID)
         {
-            if(StudentID == null)
+            if(StudentID == -1)
             {
                 return;
             }

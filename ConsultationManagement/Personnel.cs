@@ -20,7 +20,14 @@ namespace ConsultationManagement
         {
             this.PersonnelID = System.Threading.Interlocked.Increment(ref personnelIDctr);
             this.Clients = new Dictionary<Client, int>();
+            this.Classification = Classification.Faculty;
         }
+
+        public void setAccount(Account account)
+        {
+            this.Account = account;
+        }
+
         public bool SetAppointmentRequest(Client client, RequestStatus status)
         {
             foreach (Request r in client.Requests)
@@ -44,24 +51,20 @@ namespace ConsultationManagement
             this.Status = status;
         }
 
-        public bool AddWorkSchedule(WorkSchedule sched)
-        {
-            if (this.WorkSchedule.Count == 0) 
-            {
-                this.WorkSchedule.Add(sched);
-                return true;
-            }
+        public bool AddWorkSchedule(WorkSchedule sched) =>
+            /*if (this.WorkSchedule.Count == 0) 
+{
+return this.WorkSchedule.Add(sched);
+}
 
-            foreach (WorkSchedule r in this.WorkSchedule)
-            {
-                if ((sched.EndTime > r.StartTime && sched.EndTime < r.EndTime) || (sched.StartTime > r.StartTime && sched.StartTime < r.EndTime))
-                {
-                    return false;
-                }
-            }
+foreach (WorkSchedule r in this.WorkSchedule)
+{
+if ((sched.EndTime > r.StartTime && sched.EndTime < r.EndTime) || (sched.StartTime > r.StartTime && sched.StartTime < r.EndTime))
+{
+return false;
+}
+}*/
             this.WorkSchedule.Add(sched);
-            return true;
-        }
 
         public bool RemoveWorkSchedule(WorkSchedule sched)
         {
