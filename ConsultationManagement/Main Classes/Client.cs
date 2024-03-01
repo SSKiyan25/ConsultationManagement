@@ -8,7 +8,7 @@ namespace ConsultationManagement
         public static int clientIDctr = 0;
         public int ClientID { get; private set; }
         public bool IsStudent { get; set; }
-        public int StudentID { get; private set; }
+        public string StudentID { get; private set; }
         public string EmailAddress { get; private set; }
         public List<Request> Requests { get; set; }
 
@@ -17,6 +17,7 @@ namespace ConsultationManagement
             this.ClientID = System.Threading.Interlocked.Increment(ref clientIDctr);
             this.Requests = new List<Request>();
             this.IsStudent = false;
+            this.StudentID = "";
         }
 
         public void SetEmailAddress(string emailAddress)
@@ -24,9 +25,9 @@ namespace ConsultationManagement
             this.EmailAddress = emailAddress;
         }
 
-        public void SetStudentID(int StudentID)
+        public void SetStudentID(string StudentID)
         {
-            if(StudentID == -1)
+            if(StudentID.Equals(""))
             {
                 return;
             }

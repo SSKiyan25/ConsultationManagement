@@ -1,12 +1,12 @@
 ﻿using System;
+using Google.Cloud.Firestore;
 
 namespace ConsultationManagement
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine(DateTime.Now.Hour);
         }
     }
 }
