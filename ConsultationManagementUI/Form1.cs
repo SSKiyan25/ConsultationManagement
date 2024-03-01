@@ -26,6 +26,7 @@ namespace ConsultationManagementUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Log-In 
             var db = FirestoreHelper.Database;
             var data = GetWriteData();
             DocumentReference docRef = db.Collection("UserData").Document(data.Username);

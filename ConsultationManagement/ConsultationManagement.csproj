@@ -170,6 +170,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller.cs" />
     <Compile Include="Main Classes\Account.cs" />
     <Compile Include="Main Classes\Admin.cs" />
     <Compile Include="FirestoreHelper.cs" />
