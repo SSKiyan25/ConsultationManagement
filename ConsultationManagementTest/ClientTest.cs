@@ -16,7 +16,7 @@ namespace ConsultationManagementTest
             var client = new Client("Jade", "09933103211");
 
             client.SetEmailAddress("jadepogi@gmail.com");
-            var modifiedEmail = client.EmailAddress;
+            var modifiedEmaiSl = client.EmailAddress;
             var falseExpected = "false@gmail.com";
 
             Assert.True(modifiedEmail != null);
