@@ -44,6 +44,8 @@
             this.OptionalLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.VerificationLabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.step2PictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -51,9 +53,8 @@
             this.EmailAddtbDesign = new System.Windows.Forms.PictureBox();
             this.studentIDtbDesign = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.VerificationLabel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.step2PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -61,7 +62,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EmailAddtbDesign)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentIDtbDesign)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // topPanel
@@ -255,6 +255,29 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "*";
             // 
+            // VerificationLabel
+            // 
+            this.VerificationLabel.AutoSize = true;
+            this.VerificationLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(238)))), ((int)(((byte)(155)))));
+            this.VerificationLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VerificationLabel.ForeColor = System.Drawing.Color.Black;
+            this.VerificationLabel.Location = new System.Drawing.Point(544, 226);
+            this.VerificationLabel.Name = "VerificationLabel";
+            this.VerificationLabel.Size = new System.Drawing.Size(299, 22);
+            this.VerificationLabel.TabIndex = 45;
+            this.VerificationLabel.Text = "Appointment Setter Information";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ConsultationManagementUI.Properties.Resources.roundRectangle;
+            this.pictureBox2.Location = new System.Drawing.Point(503, 203);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(381, 69);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            // 
             // step2PictureBox
             // 
             this.step2PictureBox.Image = global::ConsultationManagementUI.Properties.Resources.stepProcess2;
@@ -330,33 +353,9 @@
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
             // 
-            // VerificationLabel
-            // 
-            this.VerificationLabel.AutoSize = true;
-            this.VerificationLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(238)))), ((int)(((byte)(155)))));
-            this.VerificationLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VerificationLabel.ForeColor = System.Drawing.Color.Black;
-            this.VerificationLabel.Location = new System.Drawing.Point(544, 226);
-            this.VerificationLabel.Name = "VerificationLabel";
-            this.VerificationLabel.Size = new System.Drawing.Size(299, 22);
-            this.VerificationLabel.TabIndex = 45;
-            this.VerificationLabel.Text = "Appointment Setter Information";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ConsultationManagementUI.Properties.Resources.roundRectangle;
-            this.pictureBox2.Location = new System.Drawing.Point(503, 203);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(381, 69);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 44;
-            this.pictureBox2.TabStop = false;
-            // 
             // Step2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(232)))), ((int)(((byte)(247)))));
             this.Controls.Add(this.VerificationLabel);
@@ -388,6 +387,7 @@
             this.Size = new System.Drawing.Size(1386, 788);
             this.Load += new System.EventHandler(this.Step2_Load);
             this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.step2PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -395,7 +395,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EmailAddtbDesign)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentIDtbDesign)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

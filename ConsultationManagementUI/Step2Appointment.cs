@@ -13,10 +13,11 @@ namespace ConsultationManagementUI
 {
     public partial class Step2 : UserControl
     {
-        public Step2()
+        public Home Home;
+        public Step2(Home home)
         {
             InitializeComponent();
-            
+            this.Home = home;
         }
 
         private void nextButton_MouseEnter(object sender, EventArgs e)
@@ -36,9 +37,9 @@ namespace ConsultationManagementUI
 
         private void nextButton_MouseClick(object sender, MouseEventArgs e)
         {
-            Step3Appointment step3 = new Step3Appointment();
-            this.Controls.Clear();
-            this.Controls.Add(step3);
+            Step3Appointment step3 = new Step3Appointment(Home);
+            Home.Controls.Clear();
+            Home.Controls.Add(step3);
         }
 
         private void prevButton_MouseEnter(object sender, EventArgs e)
@@ -53,9 +54,9 @@ namespace ConsultationManagementUI
 
         private void prevButton_MouseClick(object sender, MouseEventArgs e)
         {
-            Step1Appointment step1 = new Step1Appointment();
-            this.Controls.Clear();
-            this.Controls.Add(step1);
+            Step1Appointment step1 = new Step1Appointment(Home);
+            Home.Controls.Clear();
+            Home.Controls.Add(step1);
         }
     }
 }
