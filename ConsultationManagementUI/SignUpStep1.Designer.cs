@@ -287,6 +287,7 @@ namespace ConsultationManagementUI
             this.Name = "SignUpStep1";
             this.Text = "SignUpStep1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.SignUpStep1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

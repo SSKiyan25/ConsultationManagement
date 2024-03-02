@@ -58,5 +58,69 @@ namespace ConsultationManagementUI
         {
 
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ResetButtonStyles();
+            this.button1.BackColor = System.Drawing.Color.FromArgb(192, 255, 192);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ResetButtonStyles();
+            this.button2.BackColor = System.Drawing.Color.FromArgb(192, 255, 192);
+        }
+
+        private void ResetButtonStyles()
+        {
+            // function to reset styles when faculty or staff is clicked
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (this.textBox1.Text == "First Name*")
+            {
+                this.textBox1.Text = "";
+                this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText; // Set the color back to normal text color
+            }
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (this.textBox2.Text == "Last Name*")
+            {
+                this.textBox2.Text = "";
+                this.textBox2.ForeColor = System.Drawing.SystemColors.ControlText; // Set the color back to normal text color
+            }
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            {
+                if (string.IsNullOrWhiteSpace(textBox2.Text))
+                {
+                    this.textBox2.Text = "Last Name*";
+                    this.textBox2.ForeColor = Color.Gray;
+                }
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            {
+                if (string.IsNullOrWhiteSpace(textBox1.Text))
+                {
+                    this.textBox1.Text = "First Name*";
+                    this.textBox1.ForeColor = Color.Gray;
+                }
+            }
+        }
     }
 }

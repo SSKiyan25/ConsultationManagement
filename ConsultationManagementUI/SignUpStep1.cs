@@ -131,5 +131,10 @@ namespace ConsultationManagementUI
         {
             this.label2.Font = new System.Drawing.Font(label2.Font, label1.Font.Style & ~FontStyle.Underline);
         }
+
+        private void SignUpStep1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
