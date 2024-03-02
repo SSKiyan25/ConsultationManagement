@@ -12,7 +12,7 @@ namespace ConsultationManagement
         public DateTime RequestedTimeStart { get; set; }
         public DateTime RequestedTimeEnd { get; set; }
         public bool IsArchived { get; set; }
-        public Personnel Personnel { get; private set; }
+        public Personnel Personnel { get; set; }
         public RequestStatus Status { get; set; }
 
         public Request(Personnel personnel, string purpose, DateTime start, DateTime end)
@@ -25,7 +25,6 @@ namespace ConsultationManagement
             this.RequestedTimeEnd = end;
             this.IsArchived = false;
             this.Status = RequestStatus.Pending;
-            this.DateRequested = DateTime.Now;
         }
     }
 }

@@ -1,7 +1,8 @@
 
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+
 
 namespace ConsultationManagement
 {
@@ -15,10 +16,16 @@ namespace ConsultationManagement
         public Account Account { get; set; }
         public HashSet<WorkSchedule> WorkSchedule { get; set; }
 
-        public Personnel(string Name, string ContactNumber) : base(Name, ContactNumber)
+        public Personnel(string Name, string ContactNumber, PersonnelStatus status) : base(Name, ContactNumber)
         {
             this.PersonnelID = System.Threading.Interlocked.Increment(ref personnelIDctr);
             this.Clients = new Dictionary<Client, int>();
+            this.Status = status;
+        }
+
+        public void setAccount(Account account)
+        {
+            this.Account = account;
         }
 
         public bool SetAppointmentRequest(Client client, RequestStatus status)
@@ -44,18 +51,20 @@ namespace ConsultationManagement
             this.Status = status;
         }
 
-        public bool AddWorkSchedule(WorkSchedule sched)
-        {
-            foreach (WorkSchedule r in this.WorkSchedule)
-            {
-                if ((sched.EndTime > r.StartTime && sched.EndTime < r.EndTime) || (sched.StartTime > r.StartTime && sched.StartTime < r.EndTime))
-                {
-                    return false;
-                }
-            }
+        public bool AddWorkSchedule(WorkSchedule sched) =>
+            /*if (this.WorkSchedule.Count == 0) 
+{
+return this.WorkSchedule.Add(sched);
+}
+
+foreach (WorkSchedule r in this.WorkSchedule)
+{
+if ((sched.EndTime > r.StartTime && sched.EndTime < r.EndTime) || (sched.StartTime > r.StartTime && sched.StartTime < r.EndTime))
+{
+return false;
+}
+}*/
             this.WorkSchedule.Add(sched);
-            return true;
-        }
 
         public bool RemoveWorkSchedule(WorkSchedule sched)
         {

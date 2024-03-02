@@ -16,14 +16,15 @@ namespace ConsultationManagementUI
 {
     public partial class Step1Appointment : UserControl
     {
-        public Step1Appointment()
+        public Home Home;
+        public Step1Appointment(Home home)
         {
             InitializeComponent();
-            FromTimePicker.CustomFormat = "HH:mm";
-            
-            
+            this.Home = home;
+
         }
 
+        
         private void Step1Appointment_Load(object sender, EventArgs e)
         {
             
@@ -42,9 +43,50 @@ namespace ConsultationManagementUI
 
         private void nextButton_MouseClick(object sender, MouseEventArgs e)
         {
-            Step2 step2 = new Step2();
+            Step2 step2 = new Step2(Home);
+            Home.Controls.Clear();
+            Home.Controls.Add(step2);
+        }
+
+        private void PurposeComboBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (PurposeComboBox.Text.Equals("Enter name or Department"))
+            {
+                PurposeComboBox.Text = "";
+                PurposeComboBox.ForeColor = Color.Black;
+            }
+            /*Step1Continuation step1Continuation = new Step1Continuation();
             this.Controls.Clear();
-            this.Controls.Add(step2);
+            this.Controls.Add(step1Continuation);*/
+        }
+
+        private void backButton_MouseEnter(object sender, EventArgs e)
+        {
+            backButton.BackColor = Color.FromArgb(141, 238, 155);
+        }
+
+        private void backButton_MouseLeave(object sender, EventArgs e)
+        {
+            backButton.BackColor = Color.FromArgb(217, 217, 217);
+        }
+
+        
+
+        private void PurposeComboBox_Leave(object sender, EventArgs e)
+        {
+            if (PurposeComboBox.Text.Equals(""))
+            {
+                PurposeComboBox.Text = "Enter name or Department";
+                PurposeComboBox.ForeColor = Color.Gray;
+;
+            }
+        }
+
+        private void backButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            Home.Controls.Clear();
+            HomeUI homeUI = new HomeUI(Home);
+            Home.Controls.Add(homeUI);
         }
     }
 }

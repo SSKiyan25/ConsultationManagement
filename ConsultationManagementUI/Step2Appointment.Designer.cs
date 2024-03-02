@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.topPanel = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.PictureBox();
-            this.AppointmentSetterInfoLabel = new System.Windows.Forms.Label();
             this.studentIDtextBox = new System.Windows.Forms.TextBox();
             this.StudentIDLabel = new System.Windows.Forms.Label();
             this.EmailAddressLabel = new System.Windows.Forms.Label();
@@ -46,20 +44,24 @@
             this.OptionalLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.VerificationLabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.step2PictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.EmailAddtbDesign = new System.Windows.Forms.PictureBox();
             this.studentIDtbDesign = new System.Windows.Forms.PictureBox();
-            this.step2PictureBox = new System.Windows.Forms.PictureBox();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.topPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.step2PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmailAddtbDesign)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentIDtbDesign)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.step2PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // topPanel
@@ -72,28 +74,6 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1386, 69);
             this.topPanel.TabIndex = 0;
-            // 
-            // logo
-            // 
-            this.logo.Image = global::ConsultationManagementUI.Properties.Resources.logo;
-            this.logo.Location = new System.Drawing.Point(45, -30);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(238, 134);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo.TabIndex = 0;
-            this.logo.TabStop = false;
-            // 
-            // AppointmentSetterInfoLabel
-            // 
-            this.AppointmentSetterInfoLabel.AutoSize = true;
-            this.AppointmentSetterInfoLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(238)))), ((int)(((byte)(155)))));
-            this.AppointmentSetterInfoLabel.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AppointmentSetterInfoLabel.Location = new System.Drawing.Point(581, 207);
-            this.AppointmentSetterInfoLabel.Name = "AppointmentSetterInfoLabel";
-            this.AppointmentSetterInfoLabel.Padding = new System.Windows.Forms.Padding(10);
-            this.AppointmentSetterInfoLabel.Size = new System.Drawing.Size(225, 40);
-            this.AppointmentSetterInfoLabel.TabIndex = 2;
-            this.AppointmentSetterInfoLabel.Text = "Appointment Setter Information";
             // 
             // studentIDtextBox
             // 
@@ -188,7 +168,7 @@
             this.prevButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prevButton.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prevButton.ForeColor = System.Drawing.Color.White;
-            this.prevButton.Location = new System.Drawing.Point(293, 639);
+            this.prevButton.Location = new System.Drawing.Point(284, 639);
             this.prevButton.Name = "prevButton";
             this.prevButton.Size = new System.Drawing.Size(190, 64);
             this.prevButton.TabIndex = 19;
@@ -205,7 +185,7 @@
             this.nextButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nextButton.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextButton.ForeColor = System.Drawing.Color.White;
-            this.nextButton.Location = new System.Drawing.Point(883, 639);
+            this.nextButton.Location = new System.Drawing.Point(893, 639);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(190, 64);
             this.nextButton.TabIndex = 20;
@@ -275,6 +255,39 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "*";
             // 
+            // VerificationLabel
+            // 
+            this.VerificationLabel.AutoSize = true;
+            this.VerificationLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(238)))), ((int)(((byte)(155)))));
+            this.VerificationLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VerificationLabel.ForeColor = System.Drawing.Color.Black;
+            this.VerificationLabel.Location = new System.Drawing.Point(544, 226);
+            this.VerificationLabel.Name = "VerificationLabel";
+            this.VerificationLabel.Size = new System.Drawing.Size(299, 22);
+            this.VerificationLabel.TabIndex = 45;
+            this.VerificationLabel.Text = "Appointment Setter Information";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ConsultationManagementUI.Properties.Resources.roundRectangle;
+            this.pictureBox2.Location = new System.Drawing.Point(503, 203);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(381, 69);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            // 
+            // step2PictureBox
+            // 
+            this.step2PictureBox.Image = global::ConsultationManagementUI.Properties.Resources.stepProcess2;
+            this.step2PictureBox.Location = new System.Drawing.Point(225, 113);
+            this.step2PictureBox.Name = "step2PictureBox";
+            this.step2PictureBox.Size = new System.Drawing.Size(937, 72);
+            this.step2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.step2PictureBox.TabIndex = 30;
+            this.step2PictureBox.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -330,22 +343,23 @@
             this.studentIDtbDesign.TabIndex = 3;
             this.studentIDtbDesign.TabStop = false;
             // 
-            // step2PictureBox
+            // logo
             // 
-            this.step2PictureBox.Image = global::ConsultationManagementUI.Properties.Resources.stepProcess2;
-            this.step2PictureBox.Location = new System.Drawing.Point(225, 113);
-            this.step2PictureBox.Name = "step2PictureBox";
-            this.step2PictureBox.Size = new System.Drawing.Size(937, 72);
-            this.step2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.step2PictureBox.TabIndex = 30;
-            this.step2PictureBox.TabStop = false;
+            this.logo.Image = global::ConsultationManagementUI.Properties.Resources.logo;
+            this.logo.Location = new System.Drawing.Point(45, -30);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(238, 134);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo.TabIndex = 0;
+            this.logo.TabStop = false;
             // 
             // Step2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(232)))), ((int)(((byte)(247)))));
+            this.Controls.Add(this.VerificationLabel);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.step2PictureBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NameLabel);
@@ -367,20 +381,20 @@
             this.Controls.Add(this.StudentIDLabel);
             this.Controls.Add(this.studentIDtextBox);
             this.Controls.Add(this.studentIDtbDesign);
-            this.Controls.Add(this.AppointmentSetterInfoLabel);
             this.Controls.Add(this.topPanel);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "Step2";
             this.Size = new System.Drawing.Size(1386, 788);
             this.Load += new System.EventHandler(this.Step2_Load);
             this.topPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.step2PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmailAddtbDesign)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentIDtbDesign)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.step2PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,7 +404,6 @@
 
         private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.PictureBox logo;
-        private System.Windows.Forms.Label AppointmentSetterInfoLabel;
         private System.Windows.Forms.PictureBox studentIDtbDesign;
         private System.Windows.Forms.TextBox studentIDtextBox;
         private System.Windows.Forms.Label StudentIDLabel;
@@ -412,5 +425,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox step2PictureBox;
+        private System.Windows.Forms.Label VerificationLabel;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
