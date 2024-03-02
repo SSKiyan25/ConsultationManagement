@@ -122,5 +122,57 @@ namespace ConsultationManagementUI
                 }
             }
         }
+
+        private void label2_Enter(object sender, EventArgs e)
+        {
+            //this.label2.Font = new Font(this.label2.Font, this.label2.Font.Style | System.Drawing.FontStyle.Underline);
+        }
+
+        private void label2_Leave(object sender, EventArgs e)
+        {
+            //this.label2.Font = new Font(label2.Font, label2.Font.Style & ~FontStyle.Underline);
+        }
+
+        private void label2_MouseEnter(object sender, EventArgs e)
+        {
+            this.label2.Font = new Font(this.label2.Font, this.label2.Font.Style | System.Drawing.FontStyle.Underline);
+        }
+
+        private void label2_MouseLeave(object sender, EventArgs e)
+        {
+            this.label2.Font = new System.Drawing.Font(this.label2.Font, this.label2.Font.Style & ~System.Drawing.FontStyle.Underline);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // page 1 button
+            // needs condition so that i cant go to other forms if this form hasn't filled yet
+            SignUpStep1 s1 = new SignUpStep1();
+            DialogResult result = s1.ShowDialog();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // page 3 button
+            // needs condition so that i cant go to other forms if this form / forms before this hasn't filled yet
+            SignUpStep3 s3 = new SignUpStep3();
+            DialogResult result = s3.ShowDialog();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SignUpStep3 s3 = new SignUpStep3();
+            DialogResult result = s3.ShowDialog();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Login l1 = new Login();
+            DialogResult result = l1.ShowDialog();
+            this.Hide();
+        }
     }
 }

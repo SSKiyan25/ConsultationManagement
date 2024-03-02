@@ -128,6 +128,7 @@ namespace ConsultationManagementUI
             this.button4.TabIndex = 0;
             this.button4.UseCompatibleTextRendering = true;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tableLayoutPanel8
             // 
@@ -156,6 +157,7 @@ namespace ConsultationManagementUI
             this.button5.Size = new System.Drawing.Size(27, 25);
             this.button5.TabIndex = 0;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button1
             // 
@@ -308,6 +310,11 @@ namespace ConsultationManagementUI
             this.label2.Size = new System.Drawing.Size(69, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "LOGIN";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Enter += new System.EventHandler(this.label2_Enter);
+            this.label2.Leave += new System.EventHandler(this.label2_Leave);
+            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
+            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
             // 
             // button3
             // 
@@ -321,6 +328,7 @@ namespace ConsultationManagementUI
             this.button3.TabIndex = 0;
             this.button3.Text = "Continue";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // SignUpStep2
             // 

@@ -136,5 +136,37 @@ namespace ConsultationManagementUI
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // page 2 button
+            // needs condition so that it cant go to other forms if this form or forms before this hasn't filled yet
+            SignUpStep2 s2 = new SignUpStep2();
+            DialogResult result = s2.ShowDialog();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // page 2 button
+            // needs condition so that i cant go to other forms if this form or forms before this hasn't filled yet
+            SignUpStep3 s3 = new SignUpStep3();
+            DialogResult result = s3.ShowDialog();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Login l1 = new Login();
+            DialogResult result = l1.ShowDialog();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SignUpStep2 s2 = new SignUpStep2();
+            DialogResult result = s2.ShowDialog();
+            this.Hide();
+        }
     }
 }

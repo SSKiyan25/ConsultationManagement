@@ -117,20 +117,7 @@ namespace ConsultationManagementUI
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label1_Enter(object sender, EventArgs e)
         {
@@ -158,6 +145,29 @@ namespace ConsultationManagementUI
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            SignUpStep1 s1 = new SignUpStep1();
+            DialogResult result = s1.ShowDialog();
+            this.Hide();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
