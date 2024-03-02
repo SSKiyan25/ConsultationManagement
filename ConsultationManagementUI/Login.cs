@@ -15,6 +15,7 @@ namespace ConsultationManagementUI
         public Login()
         {
             InitializeComponent();
+            DoubleBuffered = true;
             SetDoubleBuffered(tableLayoutPanel1);
             SetDoubleBuffered(tableLayoutPanel2);
             SetDoubleBuffered(tableLayoutPanel3);

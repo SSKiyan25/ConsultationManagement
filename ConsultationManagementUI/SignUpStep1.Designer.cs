@@ -253,7 +253,7 @@ namespace ConsultationManagementUI
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(143, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 21);
@@ -281,7 +281,7 @@ namespace ConsultationManagementUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ConsultationManagementUI.Properties.Resources.Sign_Up__4_;
+            this.BackgroundImage = global::ConsultationManagementUI.Properties.Resources.Signup_phase1_min_402;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1363, 665);
             this.Controls.Add(this.tableLayoutPanel1);

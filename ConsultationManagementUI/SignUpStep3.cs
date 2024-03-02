@@ -15,6 +15,7 @@ namespace ConsultationManagementUI
         public SignUpStep3()
         {
             InitializeComponent();
+            DoubleBuffered = true;
             SetDoubleBuffered(tableLayoutPanel1);
             SetDoubleBuffered(tableLayoutPanel2);
             SetDoubleBuffered(tableLayoutPanel3);

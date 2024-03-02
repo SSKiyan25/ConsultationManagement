@@ -133,9 +133,9 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up__4_ {
+        internal static System.Drawing.Bitmap Signup_phase1_min_40 {
             get {
-                object obj = ResourceManager.GetObject("Sign Up (4)", resourceCulture);
+                object obj = ResourceManager.GetObject("Signup_phase1-min_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up_phase_3__3_ {
+        internal static System.Drawing.Bitmap Signup_phase1_min_401 {
             get {
-                object obj = ResourceManager.GetObject("Sign Up phase 3 (3)", resourceCulture);
+                object obj = ResourceManager.GetObject("Signup_phase1-min_401", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,19 @@ namespace ConsultationManagementUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up_phase_4__2_ {
+        internal static System.Drawing.Bitmap Signup_phase1_min_402 {
             get {
-                object obj = ResourceManager.GetObject("Sign Up phase 4 (2)", resourceCulture);
+                object obj = ResourceManager.GetObject("Signup_phase1-min_402", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Signup_phase3_min_40 {
+            get {
+                object obj = ResourceManager.GetObject("Signup_phase3-min_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
