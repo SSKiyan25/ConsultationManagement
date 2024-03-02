@@ -124,6 +124,7 @@ namespace ConsultationManagementUI
             this.button2.Size = new System.Drawing.Size(28, 23);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -152,6 +153,7 @@ namespace ConsultationManagementUI
             this.button3.Size = new System.Drawing.Size(23, 23);
             this.button3.TabIndex = 0;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
             // 
@@ -251,12 +253,13 @@ namespace ConsultationManagementUI
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(143, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "LOGIN";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
             this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
             // 
@@ -272,12 +275,13 @@ namespace ConsultationManagementUI
             this.button1.TabIndex = 0;
             this.button1.Text = "Continue";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SignUpStep1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ConsultationManagementUI.Properties.Resources.Sign_Up__4_;
+            this.BackgroundImage = global::ConsultationManagementUI.Properties.Resources.Signup_phase1_min_402;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1363, 665);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -287,6 +291,7 @@ namespace ConsultationManagementUI
             this.Name = "SignUpStep1";
             this.Text = "SignUpStep1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.SignUpStep1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
