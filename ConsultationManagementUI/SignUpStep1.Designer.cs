@@ -63,11 +63,12 @@ namespace ConsultationManagementUI
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.97006F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.02994F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1363, 665);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1022, 547);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -81,7 +82,8 @@ namespace ConsultationManagementUI
             this.tableLayoutPanel2.Controls.Add(this.textBox2, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.textBox3, 0, 7);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(805, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(603, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 8;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.91549F));
@@ -92,7 +94,7 @@ namespace ConsultationManagementUI
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5928413F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.38028F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.338028F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(555, 426);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(417, 351);
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.Enter += new System.EventHandler(this.tableLayoutPanel2_Enter);
             // 
@@ -104,11 +106,12 @@ namespace ConsultationManagementUI
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.73743F));
             this.tableLayoutPanel5.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 156);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 128);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(358, 29);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(269, 24);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
             // button2
@@ -119,9 +122,10 @@ namespace ConsultationManagementUI
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(174, 3);
+            this.button2.Location = new System.Drawing.Point(130, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(28, 23);
+            this.button2.Size = new System.Drawing.Size(21, 20);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -132,11 +136,12 @@ namespace ConsultationManagementUI
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.32433F));
             this.tableLayoutPanel6.Controls.Add(this.button3, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(367, 156);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(275, 128);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(185, 29);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(140, 24);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // button3
@@ -147,9 +152,10 @@ namespace ConsultationManagementUI
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Location = new System.Drawing.Point(2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(23, 23);
+            this.button3.Size = new System.Drawing.Size(17, 20);
             this.button3.TabIndex = 0;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -160,9 +166,10 @@ namespace ConsultationManagementUI
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(3, 280);
+            this.textBox1.Location = new System.Drawing.Point(2, 229);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(358, 23);
+            this.textBox1.Size = new System.Drawing.Size(269, 19);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Email Address*";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
@@ -175,9 +182,10 @@ namespace ConsultationManagementUI
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(3, 343);
+            this.textBox2.Location = new System.Drawing.Point(2, 280);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(358, 23);
+            this.textBox2.Size = new System.Drawing.Size(269, 19);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Password*";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
@@ -190,9 +198,10 @@ namespace ConsultationManagementUI
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(3, 400);
+            this.textBox3.Location = new System.Drawing.Point(2, 327);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(358, 23);
+            this.textBox3.Size = new System.Drawing.Size(269, 19);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Confirm Password";
             this.textBox3.Enter += new System.EventHandler(this.textBox3_Enter);
@@ -207,7 +216,8 @@ namespace ConsultationManagementUI
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.button1, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(805, 435);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(603, 357);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 5;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.43172F));
@@ -215,7 +225,7 @@ namespace ConsultationManagementUI
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.524229F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.3348F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.32599F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(555, 227);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(417, 188);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // tableLayoutPanel4
@@ -226,11 +236,12 @@ namespace ConsultationManagementUI
             this.tableLayoutPanel4.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(91, 115);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(68, 93);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(215, 21);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(162, 19);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // label1
@@ -238,9 +249,10 @@ namespace ConsultationManagementUI
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(2, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 21);
+            this.label1.Size = new System.Drawing.Size(101, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Already have an account?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -252,9 +264,10 @@ namespace ConsultationManagementUI
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(143, 0);
+            this.label2.Location = new System.Drawing.Point(107, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 21);
+            this.label2.Size = new System.Drawing.Size(53, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "LOGIN";
             this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
@@ -266,24 +279,25 @@ namespace ConsultationManagementUI
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(91, 63);
+            this.button1.Location = new System.Drawing.Point(68, 51);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 38);
+            this.button1.Size = new System.Drawing.Size(162, 32);
             this.button1.TabIndex = 0;
             this.button1.Text = "Continue";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // SignUpStep1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ConsultationManagementUI.Properties.Resources.Sign_Up__4_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1363, 665);
+            this.ClientSize = new System.Drawing.Size(1022, 547);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1381, 712);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(1027, 586);
             this.Name = "SignUpStep1";
             this.Text = "SignUpStep1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

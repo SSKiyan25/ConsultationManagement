@@ -15,8 +15,10 @@ namespace ConsultationManagementUI
         public Home()
         {
             InitializeComponent();
-            HomeUI homeUI = new HomeUI(this);
-            this.Controls.Add(homeUI);
+            //HomeUI homeUI = new HomeUI(this);
+            //this.Controls.Add(homeUI);
+            UserControl1 userControl1 = new UserControl1();
+            this.Controls.Add(userControl1);
         }
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
