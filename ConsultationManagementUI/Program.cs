@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ConsultationManagement;
 using Google.Cloud.Firestore;
+using ConsultationManagement;
 
 namespace ConsultationManagementUI
 {

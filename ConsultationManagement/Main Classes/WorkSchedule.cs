@@ -19,5 +19,7 @@ namespace ConsultationManagement
             this.EndTime = end;
             this.Frequency = frequency;
         }
+
+
     }
 }

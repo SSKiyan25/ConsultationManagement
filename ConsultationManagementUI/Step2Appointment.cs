@@ -1,4 +1,6 @@
-﻿using ConsultationManagementUI.Properties;
+﻿using ConsultationManagement;
+using ConsultationManagementUI.Properties;
+using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ConsultationManagement;
 
 namespace ConsultationManagementUI
 {
@@ -39,6 +42,21 @@ namespace ConsultationManagementUI
             Step3Appointment step3 = new Step3Appointment();
             this.Controls.Clear();
             this.Controls.Add(step3);
+
+            Request request = new Request();
+            var db = FirestoreHelper.Database;
+            DocumentReference requestDocRef = db.Collection("RequestData").Document(request.RequestID.ToString());
+            Dictionary<string, object> requestField = new Dictionary<string, object>
+            {
+                {"Name", },
+                {"", },
+                {"", },
+                {"", },
+                {"", },
+                {"", },
+                {"", },
+            };
+            await requestDocRef.SetAsync(requestDocRef);
         }
 
         private void prevButton_MouseEnter(object sender, EventArgs e)

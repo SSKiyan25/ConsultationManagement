@@ -1,4 +1,5 @@
 ﻿using ConsultationManagement;
+using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ConsultationManagement;
 
 
 
@@ -79,6 +81,16 @@ namespace ConsultationManagementUI
                 PurposeComboBox.ForeColor = Color.Gray;
 ;
             }
+        }
+
+        private void DatePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void VerificationLabel_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -20,7 +20,6 @@ namespace ConsultationManagement
         {
             this.PersonnelID = System.Threading.Interlocked.Increment(ref personnelIDctr);
             this.Clients = new Dictionary<Client, int>();
-            this.Classification = Classification.Faculty;
         }
 
         public void setAccount(Account account)
